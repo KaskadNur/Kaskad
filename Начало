@@ -1,0 +1,32 @@
+from vkcoinapi import *
+coin = VKCoin(key = 'ebc-MJNG,7Gc788i3,*s.w0F1o81a-r=A6UF5bdTsk&YxCjqKW', merchantId = 116557136)
+coin.getPaymentURL(1000)
+>>> 'https://vk.com/coin#x116557136_1000_666'
+coin.getTransactions()
+>>> {'response': [
+                  {'id': 116557136,
+                   'from_id': 1,
+                   'to_id': 2,
+                   'amount': '100',
+                   'type': 3,
+                   'payload': 1,
+                   'external_id': 0,
+                   'created_at': 1555369262},
+                  {'id': 1369973,
+                   'from_id': 2,
+                   'to_id': 1,
+                   'amount': '100',
+                   'type': 3,
+                   'payload': 1,
+                   'external_id': 0,
+                   'created_at': 1555369272}
+                  ]}
+coin.sendPayment(1, 100)
+>>> {'response': {'id': 116557136, 'amount': 100, 'current': 578637358}}
+coin.getBalance()
+>>> {'response': {'165275777': 578637358}}
+
+coin.getBalance([1, 1324639])
+>>> {'response': {'1': 92697214157, '1324639': 6935662916530}}
+coin.setShopName('KaskadNur')
+>>> {'response': '1'}
