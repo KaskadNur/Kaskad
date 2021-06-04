@@ -24,7 +24,7 @@ coin.getTransactions()
 coin.sendPayment(1, 100)
 >>> {'response': {'id': 116557136, 'amount': 100, 'current': 578637358}}
 coin.getBalance()
->>> {'response': {'165275777': 578637358}}
+>>> {'response': {'116557136': 578637358}}
 
 coin.getBalance([1, 1324639])
 >>> {'response': {'1': 92697214157, '1324639': 6935662916530}}
