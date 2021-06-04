@@ -1,5 +1,5 @@
 from vkcoinapi import *
-coin = VKCoin(key = 'ebc-MJNG,7Gc788i3,*s.w0F1o81a-r=A6UF5bdTsk&YxCjqKW', merchantId = 116557136)
+coin = VKCoin(key = 'ebc-MJNG,7Gc788i3,*s.w0F1o81a-r=A6UF5bdTsk&YxCjqKW', merchantId = 116557136_id)
 coin.getPaymentURL(1000)
 >>> 'https://vk.com/coin#x116557136_1000_666'
 coin.getTransactions()
