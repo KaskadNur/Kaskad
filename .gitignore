@@ -1,49 +1,97 @@
-# http://www.gnu.org/software/automake
+```
+# Dependencies
+node_modules/
 
-Makefile.in
-/ar-lib
-/mdate-sh
-/py-compile
-/test-driver
-/ylwrap
+# Build artifacts
+dist/
+build/
+target/
 
-# http://www.gnu.org/software/autoconf
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py~
+*.py.class
+*.py.obj
+*.py.out
+*.py.dll
+*.py.so
+*.py.a
+*.py.o
+*.py.exe
 
-autom4te.cache
-/autoscan.log
-/autoscan-*.log
-/aclocal.m4
-/compile
-/config.guess
-/config.h.in
-/config.log
-/config.status
-/config.sub
-/configure
-/configure.scan
-/depcomp
-/install-sh
-/missing
-/stamp-h1
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
 
-# https://www.gnu.org/software/libtool/
+# Logs
+*.log
 
-/ltmain.sh
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
 
-# http://www.gnu.org/software/texinfo
+# OS generated files
+.DS_Store
+Thumbs.db
 
-/texinfo.tex
+# Environment variables
+.env
+.env.local
+*.env.*
 
-# http://www.gnu.org/software/m4/
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
 
-m4/libtool.m4
-m4/ltoptions.m4
-m4/ltsugar.m4
-m4/ltversion.m4
-m4/lt~obsolete.m4
+# IDE specific
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
 
-# Generated Makefile 
-# (meta build system like autotools, 
-# can automatically generate from config.status script
-# (which is called by configure script))
-Makefile
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# MyPy cache
+.mypy_cache/
+# PyTest cache
+.pytest_cache/
+
+# Gradle
+.gradle/
+
+# Maven
+target/
+
+```
